@@ -32,7 +32,7 @@ Console editions of Minecraft (Xbox, PlayStation, Switch) do not provide a nativ
 ## 🚀 Quick Start Guide
 
 ### Step 1: Download
-Head over to the [**Releases Page**](https://github.com/YourUsername/Aura-Console-Launcher/releases/latest) and download the file for your operating system:
+Head over to the [**Releases Page**](https://github.com/oneeyebear90/Aura-Console-Launcher/releases/latest) and download the file for your operating system:
 - **Windows:** `Aura-Launcher-Windows-x64.exe`
 - **macOS (Apple Silicon M1/M2/M3/M4):** `Aura-Launcher-Mac-ARM64`
 - **macOS (Intel):** `Aura-Launcher-Mac-Intel`
