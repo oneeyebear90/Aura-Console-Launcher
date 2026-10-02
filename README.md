@@ -20,10 +20,11 @@ A lightweight, zero-dependency console proxy designed for the **Aura Minecraft C
 ## 🛠️ How It Works
 
 Console editions of Minecraft (Xbox, PlayStation, Switch) do not provide a native "Add Server" button for custom IPs. However, they continuously scan the local Wi-Fi network for LAN games.
+*This may not work for Nintendo Switch*
 
 **Aura Console Launcher** acts as a local bridge on your home network:
 1. Listens for UDP broadcast pings on local port `19132`.
-2. Responds to your console as a local LAN server named **OneEyeBear**.
+2. Responds to your console as a local LAN server named **Aura Minecraft**.
 3. Forwards game packets directly between your console and `bedrock.oneeyebear.net`.
 
 ---
@@ -45,47 +46,17 @@ Head over to the [**Releases Page**](https://github.com/YourUsername/Aura-Consol
 
 ### Step 3: Join on Console
 1. Turn on your Xbox, PlayStation, or Switch and launch **Minecraft**.
-2. Go to **Play** ➔ **Friends** tab.
-3. Scroll down to the **LAN Games** section.
-4. Select **OneEyeBear** to connect!
+2. Go to **Play** ➔ **Worlds** tab.
+3. Select **Aura Minecraft** to connect! It should be tagged as "Lan world".
 
 > **Note:** Keep the launcher terminal window open on your computer while you are playing on your console.
 
 ---
 
-## 🏗️ Building from Source
-
-If you prefer to compile the application yourself, ensure you have [Go](https://go.dev/dl/) installed.
-
-```bash
-# Clone the repository
-git clone https://github.com/YourUsername/Aura-Console-Launcher.git
-cd Aura-Console-Launcher
-
-# Compile for your native system
-go build -ldflags="-s -w" -o Aura-Console-Launcher main.go
-```
-
-### Cross-Compiling
-
-```bash
-# Windows x64
-CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o Aura-Launcher-Windows-x64.exe main.go
-
-# macOS Apple Silicon
-CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -ldflags="-s -w" -o Aura-Launcher-Mac-ARM64 main.go
-
-# Linux x64
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o Aura-Launcher-Linux-x64 main.go
-```
-
----
-
 ## 💬 Support & Community
 
-Need help connecting or running into firewall issues? 
+Need help getting whitelisted to join the Aura Minecraft server? Follow the Discord link below.
 - **Discord:** [Join the Aura Discord Server](https://discord.gg/GA3qsy8vtE)
-- **Support Channel:** Post in `#help-and-support` for assistance from our team.
 
 ---
 
